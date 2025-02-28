@@ -32,20 +32,20 @@ Source: No official specification
 [title](https://en.wikipedia.org/wiki/Apk_(file_format))
 
 The apk is a zip archive that usually contains the following files and directories:  
--META-INF directory:  
-  -MANIFEST.MF: the manifest file  
-  -The certificate of the application  
-  -CERT.SF: The list of resources and a SHA-1 digest of the corresponding lines in the MANIFEST.MF file  
--lib: the directory containing the -platform dependent- compiled code  
-  -armeabi-v7a  
-  -arm64-v8a  
-  -x86  
-  -x86_64  
--res: the directory containing resources not compiled into resources.arsc  
--assets: a directory containing applications assets, which can be retrieved by AssetManager  
--AndroidManifest.xml: an additional manifest file, describing the name, version, access rights, referenced library files for the application. This file may be in Android binary XML.  
--classes.dex: The classes compiled in the dex file format, executed by Android Runtime (or Dalvik virtual machine used in previous versions)  
--resources.arsc: a file containing precompiled resources, such as binary XML  
+- META-INF directory:  
+  - MANIFEST.MF: the manifest file  
+  - The certificate of the application  
+  - CERT.SF: The list of resources and a SHA-1 digest of the corresponding lines in the MANIFEST.MF file  
+- lib: the directory containing the -platform dependent- compiled code  
+  - armeabi-v7a  
+  - arm64-v8a  
+  - x86  
+  - x86_64  
+- res: the directory containing resources not compiled into resources.arsc  
+- assets: a directory containing applications assets, which can be retrieved by AssetManager  
+- AndroidManifest.xml: an additional manifest file, describing the name, version, access rights, referenced library files for the application. This file may be in Android binary XML.  
+- classes.dex: The classes compiled in the dex file format, executed by Android Runtime (or Dalvik virtual machine used in previous versions)  
+- resources.arsc: a file containing precompiled resources, such as binary XML  
 
 
 
