@@ -7,23 +7,47 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
-# Communicate using Markdown
+# Protocols and file signatures
 
-_Organize ideas and collaborate using Markdown, a lightweight language for text formatting._
+_Network, application, OS protocols and file signatures_
 
 </header>
 
 <!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
+  todo: Populate the board with the most important protocols
 -->
 
-## Step 1: Add headers
+## Network protocols
 
-_Welcome to "Communicate using Markdown"! :wave:_
+_Physical, Data Link, Network, Transport, Session, Presentation, Application_
+
+1. Transport Layer Security (TLS)
+Source: [title](https://datatracker.ietf.org/doc/html/rfc5246)
+
+
+## File signatures
+
+1. Android Package (apk)
+Source: No official specification
+[title](https://en.wikipedia.org/wiki/Apk_(file_format))
+
+The apk is a zip archive that usually contains the following files and directories:
+-META-INF directory:
+  -MANIFEST.MF: the manifest file
+  -The certificate of the application
+  -CERT.SF: The list of resources and a SHA-1 digest of the corresponding lines in the MANIFEST.MF file
+-lib: the directory containing the -platform dependent- compiled code
+  -armeabi-v7a
+  -arm64-v8a
+  -x86
+  -x86_64
+-res: the directory containing resources not compiled into resources.arsc
+-assets: a directory containing applications assets, which can be retrieved by AssetManager
+-AndroidManifest.xml: an additional manifest file, describing the name, version, access rights, referenced library files for the application. This file may be in Android binary XML.
+-classes.dex: The classes compiled in the dex file format, executed by Android Runtime (or Dalvik virtual machine used in previous versions)
+-resources.arsc: a file containing precompiled resources, such as binary XML
+
+
 
 **What is _Markdown_?** Markdown is a [lightweight syntax](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for communicating on GitHub. You can format text to add a heading, lists, **bold**, _italics_, tables, and many other stylings. You can use Markdown in most places around GitHub:
 
