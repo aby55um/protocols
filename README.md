@@ -22,14 +22,19 @@ _Network, application, OS protocols and file signatures_
 _Physical, Data Link, Network, Transport, Session, Presentation, Application_
 
 1. Transport Layer Security (TLS)
-Source: [title](https://datatracker.ietf.org/doc/html/rfc5246)
+Source: [RFC 5246](https://datatracker.ietf.org/doc/html/rfc5246)
 
+1. Syslog
+Source: [RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424)
+-syslog content
+-syslog application (originator -> relay -> collector)
+-syslog transport
 
 ## File signatures
 
 1. Android Package (apk)
 Source: No official specification
-[title](https://en.wikipedia.org/wiki/Apk_(file_format))
+[Wikipedia](https://en.wikipedia.org/wiki/Apk_(file_format))
 
 The apk is a zip archive that usually contains the following files and directories:  
 - META-INF directory:  
